@@ -9,7 +9,7 @@ export default function AboutPage() {
   return (
     <div className="min-h-screen bg-white font-body">
       {/* Header */}
-      <header className="bg-white shadow-sm sticky top-0 z-50">
+      {/* <header className="bg-white shadow-sm sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
             <Link href="/" className="flex items-center space-x-2">
@@ -35,7 +35,7 @@ export default function AboutPage() {
             </div>
           </div>
         </div>
-      </header>
+      </header> */}
 
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-cream to-lettuce/5 py-20">
@@ -332,7 +332,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Footer */}
+      {/* Footer
       <footer className="bg-gray-900 text-white py-12">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-4 gap-8">
@@ -397,7 +397,7 @@ export default function AboutPage() {
             <p>&copy; 2024 Dela Delish. All rights reserved. Made with ❤️ for food lovers everywhere.</p>
           </div>
         </div>
-      </footer>
+      </footer> */}
     </div>
   )
 }
