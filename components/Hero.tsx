@@ -3,40 +3,40 @@ import Image from "next/image";
 
 const Hero = () => {
   return (
-    <section className="relative bg-[url('/images/bg.png')] overflow-hidden top-[-80px] pt-[70px]" style={{ backgroundAttachment: 'fixed' }}>
+    <section className="relative bg-[url('/images/bg.png')] overflow-hidden top-[-80px] pt-[70px] pb-[50px] md:pb-[0px]" style={{ backgroundAttachment: 'fixed' }}>
       <div className="absolute inset-0 bg-black opacity-[85%]"></div>
       <div className="container mx-auto px-4">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <div className="space-y-8 z-10 relative">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+          <div className="space-y-6 lg:space-y-8 z-10 relative">
             {/* Special Offer Badge */}
             {/* <div className="inline-flex items-center space-x-2 bg-food-red text-white px-6 py-3 rounded-full shadow-sm">
             <Gift className="h-5 w-5" />
             <span className="font-bold">FREE DELIVERY on your first order!</span>
           </div> */}
 
-            <div className="space-y-6">
-              <h1 className="text-[96px] lg:text-7xl font-extrabold text-gray-900 uppercase">
-                <span className="text-[#FF7B00] text-[96px] block leading-[89px]">Craving</span>
-                <span className="text-white text-[96px] block leading-[89px]">Something</span>
-                <span className="text-white text-[96px] block leading-[89px] flex gap-[-10px] relative">
+            <div className="space-y-4 lg:space-y-6">
+              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-[96px] font-extrabold text-gray-900 uppercase">
+                <span className="text-[#FF7B00] text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-[96px] block leading-tight lg:leading-[89px]">Craving</span>
+                <span className="text-white text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-[96px] block leading-tight lg:leading-[89px]">Something</span>
+                <span className="text-white text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-[96px] block leading-tight lg:leading-[89px] flex gap-[-10px]">
                   Delicious
-                  <span className="text-white text-[96px] block leading-[89px] absolute top-0 right-0">
-                    <Image src="/images/qmark.png" alt="Arrow" width={100} height={100} />
+                  <span className="text-white text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-[96px] block leading-tight lg:leading-[89px] mt-[5px] md:mt-[5px]  ml-[-2%] md:ml-[-5%]">
+                    <Image src="/images/qmark.png" alt="Arrow" width={100} height={100} className="w-8 h-8 sm:w-12 sm:h-12 md:w-16 md:h-16 lg:w-20 lg:h-20 xl:w-[100px] xl:h-[100px]" />
                   </span>
                 </span>
               </h1>
-              <p className="text-[11px] text-white font-light uppercase" style={{ letterSpacing: '0.34em' }}>A culinary experience of comfort and wellness</p>
-              <p className="text-white leading-relaxed font-normal w-[620px]">
-                <span className="text-white text-[15px] font-light">Fresh, healthy meals crafted by expert chefs and delivered to your door in 30 minutes or less.</span>
-                <span className="text-white text-[15px] font-bold"> No cooking, no cleanup, just pure deliciousness!</span>
+              <p className="text-[10px] sm:text-[11px] text-white font-light uppercase" style={{ letterSpacing: '0.34em' }}>A culinary experience of comfort and wellness</p>
+              <p className="text-white leading-relaxed font-normal w-full lg:w-[620px]">
+                <span className="text-white text-[13px] sm:text-[15px] font-light">Fresh, healthy meals crafted by expert chefs and delivered to your door in 30 minutes or less.</span>
+                <span className="text-white text-[13px] sm:text-[15px] font-bold"> No cooking, no cleanup, just pure deliciousness!</span>
               </p>
             </div>
 
-            <div className="flex items-center space-x-4">
-              <Button variant="ghost" className="bg-food-red text-white hover:bg-food-red/90 !rounded-none px-[43px] py-[25px]">
+            <div className="flex flex-col sm:flex-row items-center space-y-4 sm:space-y-0 sm:space-x-4">
+              <Button variant="ghost" className="bg-food-red text-white hover:bg-food-red/90 !rounded-none px-6 sm:px-[43px] py-4 sm:py-[25px] w-full sm:w-auto text-sm sm:text-base">
                 Order Now
               </Button>
-              <Button variant="outline" className="font-bold !rounded-none border-white border-[1px] text-white bg-transparent px-[43px] py-[25px]">Get in touch</Button>
+              <Button variant="outline" className="font-bold !rounded-none border-white border-[1px] text-white bg-transparent px-6 sm:px-[43px] py-4 sm:py-[25px] w-full sm:w-auto text-sm sm:text-base">Get in touch</Button>
             </div>
 
             {/* Location and Search */}
@@ -102,14 +102,14 @@ const Hero = () => {
           </div>
 
           {/* Hero Image */}
-          <div className="relative">
-            <div className="min-h-[100vh] flex items-center justify-center">
+          <div className="relative order-first lg:order-last">
+            <div className="min-h-[50vh] lg:min-h-[100vh] flex items-center justify-center">
               <Image
                 src="/images/hero-bg.png"
                 alt="Delicious healthy meals"
                 width={594}
                 height={100}
-                className="shadow-sm h-[600px] w-[594px] object-cover object-center"
+                className="shadow-sm h-[300px] w-[90vw] sm:h-[400px] sm:w-[400px] md:h-[500px] md:w-[500px] lg:h-[600px] lg:w-[594px] object-cover object-center"
               />
 
               {/* Floating Elements */}
