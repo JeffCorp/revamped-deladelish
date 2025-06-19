@@ -1,4 +1,4 @@
-import type { Config } from "tailwindcss"
+import type { Config } from "tailwindcss";
 
 const config: Config = {
   darkMode: ["class"],
@@ -26,12 +26,12 @@ const config: Config = {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         primary: {
-          DEFAULT: "#DC2626", // Pepper red
+          DEFAULT: "#FF4B4B", // Food-inspired red
           foreground: "#FFFFFF",
         },
         secondary: {
-          DEFAULT: "#D97706", // Cutlery gold
-          foreground: "#FFFFFF",
+          DEFAULT: "#FFB800", // Food-inspired yellow
+          foreground: "#000000",
         },
         destructive: {
           DEFAULT: "hsl(var(--destructive))",
@@ -53,19 +53,20 @@ const config: Config = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        // Food-themed colors
-        tomato: "#FF6347",
-        avocado: "#9CAF88",
-        carrot: "#FF8C00",
-        lettuce: "#90EE90",
-        eggplant: "#614051",
-        corn: "#FFD700",
-        olive: "#808000",
-        cream: "#FFFDD0",
+        // Food-inspired colors
+        food: {
+          red: "#F00B0B",
+          yellow: "#FFB800",
+          green: "#4CAF50",
+          orange: "#FF8C00",
+          cream: "#FFF9E6",
+          brown: "#8B4513",
+        },
       },
       fontFamily: {
-        food: ["Playfair Display", "serif"],
-        body: ["Inter", "sans-serif"],
+        body: ["Montserrat", "sans-serif"],
+        heading: ["Montserrat", "sans-serif"],
+        duolingo: ["Fredoka", "sans-serif"],
       },
       keyframes: {
         "accordion-down": {
@@ -76,14 +77,19 @@ const config: Config = {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: "0" },
         },
+        bounce: {
+          "0%, 100%": { transform: "translateY(0)" },
+          "50%": { transform: "translateY(-10px)" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        bounce: "bounce 1s infinite",
       },
     },
   },
   plugins: [require("tailwindcss-animate")],
-} satisfies Config
+} satisfies Config;
 
-export default config
+export default config;

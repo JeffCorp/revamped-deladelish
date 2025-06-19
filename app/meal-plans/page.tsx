@@ -1,41 +1,13 @@
+import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
-import { Badge } from "@/components/ui/badge"
-import { ChefHat, Check, Star, Users, Calendar, Heart, Brain, Dumbbell, Shield } from "lucide-react"
+import { Brain, Calendar, Check, ChefHat, Dumbbell, Heart, Shield, Star, Users } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
 
 export default function MealPlansPage() {
   return (
     <div className="min-h-screen bg-gray-50 font-body">
-      {/* Header */}
-      <header className="bg-white shadow-sm sticky top-0 z-50">
-        <div className="container mx-auto px-4 py-4">
-          <div className="flex items-center justify-between">
-            <Link href="/" className="flex items-center space-x-2">
-              <ChefHat className="h-8 w-8 text-primary" />
-              <span className="text-2xl font-food font-bold text-primary">Dela Delish</span>
-            </Link>
-            <nav className="hidden md:flex items-center space-x-8">
-              <Link href="/menu" className="text-gray-700 hover:text-primary transition-colors">
-                Menu
-              </Link>
-              <Link href="/meal-plans" className="text-primary font-medium">
-                Meal Plans
-              </Link>
-              <Link href="/about" className="text-gray-700 hover:text-primary transition-colors">
-                About
-              </Link>
-            </nav>
-            <div className="flex items-center space-x-4">
-              <Button variant="ghost" className="text-gray-700">
-                <Link href="/login">Sign in</Link>
-              </Button>
-              <Button className="bg-primary hover:bg-primary/90">Get Started</Button>
-            </div>
-          </div>
-        </div>
-      </header>
 
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-primary/5 to-secondary/5 py-16">
