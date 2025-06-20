@@ -47,7 +47,7 @@ export default function AboutPage() {
       </header> */}
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-cream to-lettuce/5 py-20">
+      <section className="bg-gradient-to-br from-cream to-lettuce/5 py-10">
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-8">
@@ -292,14 +292,14 @@ export default function AboutPage() {
           <div className="grid md:grid-cols-3 gap-8">
             {[
               {
-                name: "Chef Maria Rodriguez",
-                role: "Executive Chef",
+                name: "Oluwaftosin Obe",
+                role: "Partner/Nutritionist",
                 image: "/placeholder.svg?height=300&width=300",
                 bio: "15+ years of culinary excellence with expertise in healthy cuisine",
               },
               {
-                name: "Dr. James Wilson",
-                role: "Head Nutritionist",
+                name: "Emmanuella Ukutegbe",
+                role: "Partner/Nutritionist",
                 image: "/placeholder.svg?height=300&width=300",
                 bio: "PhD in Nutrition Science, specializing in therapeutic meal planning",
               },

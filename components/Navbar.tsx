@@ -13,7 +13,7 @@ const Navbar = () => {
   console.log(pathname);
 
   return (
-    <header className="bg-[#11111178] shadow-sm sticky top-0 z-50">
+    <header className="bg-[#111111a1] shadow-sm sticky top-0 z-50">
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           <Link href="/" className="flex items-center space-x-2">
@@ -24,18 +24,18 @@ const Navbar = () => {
             </span>
           </Link>
           <nav className="hidden md:flex items-center space-x-8">
-            <Link href="/menu" className={`hover:text-food-red transition-colors ${pathname === '/menu' ? 'text-food-red' : 'text-gray-200'}`}>
+            <Link href="/menu" className={`hover:text-food-red transition-colors ${pathname === '/menu' ? 'text-food-red' : 'text-white'}`}>
               Menu
             </Link>
-            <Link href="/meal-plans" className={`hover:text-food-red transition-colors ${pathname === '/meal-plans' ? 'text-food-red' : 'text-gray-200'}`}>
+            <Link href="/meal-plans" className={`hover:text-food-red transition-colors ${pathname === '/meal-plans' ? 'text-food-red' : 'text-white'}`}>
               Meal Plans
             </Link>
-            <Link href="/about" className={`hover:text-food-red transition-colors ${pathname === '/about' ? 'text-food-red' : 'text-gray-200'}`}>
+            <Link href="/about" className={`hover:text-food-red transition-colors ${pathname === '/about' ? 'text-food-red' : 'text-white'}`}>
               About
             </Link>
           </nav>
           <div className="flex items-center space-x-4">
-            <Button variant="ghost" className="text-gray-200 font-light !rounded-none hidden md:block">
+            <Button variant="outline" className="text-white bg-transparent font-light !rounded-none hidden md:block">
               Sign in
             </Button>
             <Button className="bg-food-red hover:bg-food-red/90 font-bold !rounded-none hidden md:block">Sign up</Button>
