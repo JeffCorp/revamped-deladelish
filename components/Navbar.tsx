@@ -24,13 +24,13 @@ const Navbar = () => {
             </span>
           </Link>
           <nav className="hidden md:flex items-center space-x-8">
-            <Link href="/menu" className={`hover:text-food-red transition-colors ${pathname === '/menu' ? 'text-food-red' : 'text-white'}`}>
+            <Link href="/menu" className={`hover:font-bold transition-colors ${pathname === '/menu' ? ('text-white font-bold underline decoration-2 decoration-white') : 'text-white'}`}>
               Menu
             </Link>
-            <Link href="/meal-plans" className={`hover:text-food-red transition-colors ${pathname === '/meal-plans' ? 'text-food-red' : 'text-white'}`}>
+            <Link href="/meal-plans" className={`hover:font-bold transition-colors ${pathname === '/meal-plans' ? ('text-white font-bold underline decoration-2 decoration-white') : 'text-white'}`}>
               Meal Plans
             </Link>
-            <Link href="/about" className={`hover:text-food-red transition-colors ${pathname === '/about' ? 'text-food-red' : 'text-white'}`}>
+            <Link href="/about" className={`hover:font-bold transition-colors ${pathname === '/about' ? ('text-white font-bold underline decoration-2 decoration-white') : 'text-white'}`}>
               About
             </Link>
           </nav>
@@ -38,7 +38,7 @@ const Navbar = () => {
             <Button variant="outline" className="text-white bg-transparent font-light !rounded-none hidden md:block">
               Sign in
             </Button>
-            <Button className="bg-food-red hover:bg-food-red/90 font-bold !rounded-none hidden md:block">Sign up</Button>
+            <Button className="bg-food-red hover:bg-food-red/80 font-bold !rounded-none hidden md:block">Sign up</Button>
 
             {/* Mobile menu button */}
             <button
@@ -79,21 +79,21 @@ const Navbar = () => {
             <nav className="flex flex-col space-y-4 pt-4">
               <Link
                 href="/menu"
-                className={`hover:text-food-red transition-colors ${pathname === '/menu' ? 'text-food-red' : 'text-gray-200'}`}
+                className={`hover:font-bold transition-colors ${pathname === '/menu' ? ('text-gray-200 font-bold underline decoration-2 decoration-gray-200') : 'text-gray-200'}`}
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Menu
               </Link>
               <Link
                 href="/meal-plans"
-                className={`hover:text-food-red transition-colors ${pathname === '/meal-plans' ? 'text-food-red' : 'text-gray-200'}`}
+                className={`hover:font-bold transition-colors ${pathname === '/meal-plans' ? ('text-gray-200 font-bold underline decoration-2 decoration-gray-200') : 'text-gray-200'}`}
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Meal Plans
               </Link>
               <Link
                 href="/about"
-                className={`hover:text-food-red transition-colors ${pathname === '/about' ? 'text-food-red' : 'text-gray-200'}`}
+                className={`hover:font-bold transition-colors ${pathname === '/about' ? ('text-gray-200 font-bold underline decoration-2 decoration-gray-200') : 'text-gray-200'}`}
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 About

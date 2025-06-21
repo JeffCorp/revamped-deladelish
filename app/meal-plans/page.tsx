@@ -276,7 +276,7 @@ export default function MealPlansPage() {
           <div className="grid md:grid-cols-3 gap-8">
             <Card className="border-0 shadow-lg hover:shadow-xl transition-shadow">
               <div className="relative">
-                 <div className="absolute inset-0 hover:bg-black opacity-50 rounded-t-lg"></div>
+                <div className="absolute inset-0 hover:bg-black opacity-50 rounded-t-lg"></div>
                 <Image
                   src="./images/kids-brain-food.png"
                   alt="Kids nutrition"
@@ -317,7 +317,7 @@ export default function MealPlansPage() {
                     <span className="text-2xl font-bold text-primary">$75</span>
                     <span className="text-gray-600">/week</span>
                   </div>
-                 <Button className="bg-primary hover:bg-primary/90">
+                  <Button className="bg-primary hover:bg-primary/90">
                     Start Plan
                   </Button>
                 </div>
@@ -367,7 +367,7 @@ export default function MealPlansPage() {
                     <span className="text-2xl font-bold text-primary">$85</span>
                     <span className="text-gray-600">/week</span>
                   </div>
-                 <Button className="bg-primary hover:bg-primary/90">
+                  <Button className="bg-primary hover:bg-primary/90">
                     Start Plan
                   </Button>
                 </div>
@@ -376,7 +376,7 @@ export default function MealPlansPage() {
 
             <Card className="border-0 shadow-lg hover:shadow-xl transition-shadow ">
               <div className="relative">
-                 <div className="absolute inset-0 hover:bg-black opacity-50 rounded-t-lg"></div>
+                <div className="absolute inset-0 hover:bg-black opacity-50 rounded-t-lg"></div>
                 <Image
                   src="./images/satisfy.jpg"
                   alt="Hormonal health"
